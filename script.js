@@ -8,9 +8,12 @@ bodyContainer.addEventListener('click', clear)
 
 function clear() {
   let insertedContent = document.querySelector(".filmContainer");
+  function removeContent() {
+    insertedContent.remove()
+  }
   if (insertedContent) {
     insertedContent.classList.add("bodyClear")
-    setTimeout(insertedContent.parentNode.removeChild(insertedContent), 1000)
+    setTimeout(removeContent, 1000)
     // insertedContent.parentNode.removeChild(insertedContent);
     }
 }
