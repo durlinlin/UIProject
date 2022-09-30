@@ -108,12 +108,11 @@ li:hover .menuItem::after {
   cursor: pointer;
   border: none;
   border-radius: 9px;
-  background-color: white;
   /* background: white; */
   box-shadow:  5px 5px 10px #9e9e9e,
   -5px -5px 10px #ffffff;
-  background-image: 
-  url('/img/menu_FILL0_wght400_GRAD0_opsz48.png');
+  background-color: white;
+  background-image: url('./img/menu_FILL0_wght400_GRAD0_opsz48.png');
 }
 .hamburgerClicked{
 border-radius: 9px;
