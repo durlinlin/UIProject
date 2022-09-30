@@ -12,6 +12,7 @@ body{
   background-repeat: no-repeat;
   background-position: bottom right;
   background-attachment: fixed;
+  overflow: hidden;
 }
 .nav-container{
   display: flex;
