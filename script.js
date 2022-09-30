@@ -10,6 +10,7 @@ function clear() {
   let insertedContent = document.querySelector(".filmContainer");
   if (insertedContent) {
     insertedContent.classList.add("bodyClear")
+    setTimeout(insertedContent.parentNode.removeChild(insertedContent), 1000)
     // insertedContent.parentNode.removeChild(insertedContent);
     }
 }
