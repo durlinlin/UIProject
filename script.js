@@ -13,7 +13,7 @@ function clear() {
   }
   if (insertedContent) {
     insertedContent.classList.add("bodyClear")
-    setTimeout(removeContent, 1000)
+    setTimeout(removeContent, 1000) //removes images from the page after sliding animation
     // insertedContent.parentNode.removeChild(insertedContent);
     }
 }
@@ -56,7 +56,7 @@ function displayImage(res) {
   let insertedContent = document.querySelector(".filmContainer");
 
   if (insertedContent) {
-    insertedContent.parentNode.removeChild(insertedContent);
+    insertedContent.remove();//if content in filmContainer exists then it would remove it so that a new film can be displayed if not removed, content stacks over one another
     }
     let imagehtmlTemplate = `
     <div class ="filmContainer">
@@ -74,5 +74,4 @@ function displayImage(res) {
     </div>`
     bodyContainer.insertAdjacentHTML("beforeend", imagehtmlTemplate);
 }
-
 
